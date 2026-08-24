@@ -1,0 +1,31 @@
+{
+  "pipeline_execution_arn": "arn:aws:sagemaker:ap-southeast-1:044528205969:pipeline/iti113-team07-heart-disease/execution/ikbg10jjnu4g",
+  "training_job_name": "pipelines-ikbg10jjnu4g-TrainModel-naRSj8axSL",
+  "training_job_arn": "arn:aws:sagemaker:ap-southeast-1:044528205969:training-job/pipelines-ikbg10jjnu4g-TrainModel-naRSj8axSL",
+  "model_artifact_s3_uri": "s3://sagemaker-ap-southeast-1-044528205969/pipelines-ikbg10jjnu4g-TrainModel-naRSj8axSL/output/model.tar.gz",
+  "metrics": {
+    "test_auc_roc": 0.9696999788284302,
+    "test_accuracy": 0.885200023651123,
+    "test_f1": 0.8813999891281128
+  },
+  "hyperparameters": {
+    "max-depth": "6",
+    "min-samples-leaf": "4",
+    "n-estimators": "200",
+    "random-state": "42",
+    "run-name": "\"sagemaker_pipeline_run\"",
+    "sagemaker_container_log_level": "20",
+    "sagemaker_program": "\"train.py\"",
+    "sagemaker_region": "\"ap-southeast-1\"",
+    "sagemaker_submit_directory": "\"s3://sagemaker-ap-southeast-1-044528205969/iti113-team07-s703-train-2026-07-24-07-09-57-835/source/sourcedir.tar.gz\"",
+    "semester": "\"26S1\"",
+    "student-id": "\"s703\"",
+    "team-id": "\"team07\""
+  },
+  "team_id": "team07",
+  "student_id": "s703",
+  "semester": "26S1",
+  "mlflow_app_arn": "arn:aws:sagemaker:ap-southeast-1:044528205969:mlflow-app/app-PVSI6X27672O",
+  "mlflow_experiment": "ITI113/team07/Experiment1",
+  "tracking_backend": "sagemaker_mlflow_app"
+}

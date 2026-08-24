@@ -1,0 +1,29 @@
+{
+  "pipeline_execution_arn": "arn:aws:sagemaker:ap-southeast-1:044528205969:pipeline/iti113-team07-credit-card-fraud-detection/execution/nj8l48qbo5n5",
+  "training_job_name": "pipelines-nj8l48qbo5n5-TrainLeakageSafeCham-dlwL7pTASB",
+  "model_artifact_s3_uri": "s3://sagemaker-ap-southeast-1-044528205969/pipelines-nj8l48qbo5n5-TrainLeakageSafeCham-dlwL7pTASB/output/model.tar.gz",
+  "model_package_arn": "arn:aws:sagemaker:ap-southeast-1:044528205969:model-package/team07-credit-card-fraud-detection/12",
+  "source_mlflow_run_id": "b5b7943b5feb4629a5f1810ff572b623",
+  "dataset_version": "fraud_dataset_50k_v1",
+  "risk_score_excluded": true,
+  "algorithm": "XGBoost",
+  "lifecycle_stage": "Staging",
+  "model_approval_status": "PendingManualApproval",
+  "source_deployment_ready": true,
+  "pipeline_recall_passed": true,
+  "pipeline_fpr_passed": true,
+  "deployment_ready": true,
+  "quality_gate_status": "Passed",
+  "metrics": {
+    "test_balanced_accuracy": 0.7984293699264526,
+    "test_fpr": 0.03992927819490433,
+    "test_auc_roc": 0.8134356737136841,
+    "test_alert_rate": 0.23170000314712524,
+    "test_accuracy": 0.8561999797821045,
+    "test_precision": 0.8830384016036987,
+    "test_recall": 0.6367880702018738,
+    "test_auc_pr": 0.8092902302742004,
+    "test_mcc": 0.6605982780456543,
+    "test_f1": 0.7399638295173645
+  }
+}

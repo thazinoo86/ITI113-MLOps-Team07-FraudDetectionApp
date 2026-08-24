@@ -1,0 +1,24 @@
+# Secrets
+.aws/
+.env
+.env.*
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated files
+mlruns/
+logs/
+.DS_Store
+
+# Large archives
+*.zip
+*.tar.gz

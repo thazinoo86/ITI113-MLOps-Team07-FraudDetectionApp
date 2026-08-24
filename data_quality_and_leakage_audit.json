@@ -1,0 +1,19 @@
+{
+  "raw_dataset_version": "fraud_dataset_50k_v1",
+  "source_url": "https://www.kaggle.com/datasets/samayashar/fraud-detection-transactions-dataset",
+  "rows": 50000,
+  "columns": 21,
+  "missing_values": 0,
+  "duplicate_rows": 0,
+  "unique_transaction_ids": 50000,
+  "unique_users": 8963,
+  "invalid_timestamps": 0,
+  "weekend_mismatch_rows": 20755,
+  "weekend_mismatch_rate": 0.4151,
+  "fraud_count": 16067,
+  "nonfraud_count": 33933,
+  "fraud_rate": 0.32134,
+  "nonfraud_to_fraud_ratio": 2.111968631356196,
+  "explicit_rule_match_rate": 1.0,
+  "explicit_rule": "Risk_Score > 0.85 OR Failed_Transaction_Count_7d >= 4"
+}

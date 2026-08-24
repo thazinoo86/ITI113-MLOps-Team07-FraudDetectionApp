@@ -1,0 +1,13 @@
+{
+    "team_id": "team07",
+    "student_id": "s703",
+    "project_name": "heart-disease",
+    "best_run_id": "542b0cf38dd342ad99aa7f2699170ae8",
+    "best_run_name": "rf_candidate_04",
+    "best_auc": 0.9697,
+    "best_model_uri": "runs:/542b0cf38dd342ad99aa7f2699170ae8/model",
+    "mlflow_tracking_uri": "arn:aws:sagemaker:ap-southeast-1:044528205969:mlflow-app/app-PVSI6X27672O",
+    "mlflow_experiment": "ITI113/team07/Experiment1",
+    "tracking_backend": "sagemaker_mlflow_app",
+    "mlflow_app_team_tag": "team07"
+}

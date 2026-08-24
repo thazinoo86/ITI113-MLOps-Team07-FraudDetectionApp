@@ -1,0 +1,41 @@
+feature,mean_abs_shap
+Failed_Transaction_Count_7d,2.2715013
+Transaction_Distance,0.041594204
+Daily_Transaction_Count,0.03492416
+Account_Balance,0.031843115
+Avg_Transaction_Amount_7d,0.025604714
+Transaction_Amount,0.025353206
+Card_Age,0.0251423
+Transaction_Month,0.023645455
+Device_Type_Tablet,0.02212514
+Transaction_DayOfWeek,0.014782777
+Transaction_Hour,0.014348661
+Transaction_Type_POS,0.013675522
+Transaction_Type_Online,0.010401195
+Transaction_Hour_Cos,0.009904101
+Transaction_Type_Bank Transfer,0.008575423
+Location_Mumbai,0.008292551
+Transaction_Type_ATM Withdrawal,0.007995342
+Transaction_Hour_Sin,0.007818236
+Merchant_Category_Electronics,0.007324245
+Authentication_Method_OTP,0.0071471673
+Card_Type_Visa,0.007102594
+Merchant_Category_Restaurants,0.005290548
+Merchant_Category_Groceries,0.004012229
+Device_Type_Mobile,0.003739681
+Authentication_Method_PIN,0.0035033808
+Location_London,0.0034890203
+Previous_Fraudulent_Activity,0.0033524905
+Location_New York,0.0030813874
+Card_Type_Amex,0.0027370295
+Device_Type_Laptop,0.0026520223
+Authentication_Method_Password,0.0025324386
+IP_Address_Flag,0.0023045512
+Merchant_Category_Travel,0.0020710805
+Location_Sydney,0.0020058507
+Location_Tokyo,0.0018128868
+Merchant_Category_Clothing,0.0015907413
+Authentication_Method_Biometric,0.0014046018
+Card_Type_Discover,0.0012451509
+Card_Type_Mastercard,0.00090904854
+Derived_Is_Weekend,0.00063782156

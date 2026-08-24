@@ -1,0 +1,264 @@
+{
+  "team_id": "team07",
+  "student_id": "s701",
+  "project_name": "credit-card-fraud-detection",
+  "model_uri": "runs:/b5b7943b5feb4629a5f1810ff572b623/model",
+  "algorithm": "XGBoost",
+  "frozen_threshold": 0.19469599425792694,
+  "test_rows": 10000,
+  "baseline_metrics": {
+    "accuracy": 0.8561,
+    "precision": 0.8826574633304572,
+    "recall": 0.6367880485527544,
+    "f1": 0.7398300488157656,
+    "fpr": 0.040076617062030355,
+    "fnr": 0.36321195144724555,
+    "alert_rate": 0.2318,
+    "tn": 6515,
+    "fp": 272,
+    "fn": 1167,
+    "tp": 2046,
+    "auc_roc": 0.8144796186077528
+  },
+  "fairness_gap_summary": {
+    "Location": {
+      "recall_gap": 0.02309912263635261,
+      "fpr_gap": 0.016314609687356624,
+      "fnr_gap": 0.02309912263635272,
+      "precision_gap": 0.05254724988096959,
+      "alert_rate_gap": 0.026367893123722258
+    },
+    "Device_Type": {
+      "recall_gap": 0.025143820969247943,
+      "fpr_gap": 0.03317501929614208,
+      "fnr_gap": 0.025143820969247888,
+      "precision_gap": 0.0760847393420171,
+      "alert_rate_gap": 0.03369547918927707
+    },
+    "Authentication_Method": {
+      "recall_gap": 0.04196403083071654,
+      "fpr_gap": 0.013929893489943869,
+      "fnr_gap": 0.04196403083071654,
+      "precision_gap": 0.04058250024064569,
+      "alert_rate_gap": 0.024860384617859194
+    }
+  },
+  "top_15_shap_features": [
+    {
+      "feature": "Failed_Transaction_Count_7d",
+      "mean_abs_shap": 2.271501302719116
+    },
+    {
+      "feature": "Transaction_Distance",
+      "mean_abs_shap": 0.04159420356154442
+    },
+    {
+      "feature": "Daily_Transaction_Count",
+      "mean_abs_shap": 0.034924160689115524
+    },
+    {
+      "feature": "Account_Balance",
+      "mean_abs_shap": 0.03184311464428902
+    },
+    {
+      "feature": "Avg_Transaction_Amount_7d",
+      "mean_abs_shap": 0.025604713708162308
+    },
+    {
+      "feature": "Transaction_Amount",
+      "mean_abs_shap": 0.0253532063215971
+    },
+    {
+      "feature": "Card_Age",
+      "mean_abs_shap": 0.025142300873994827
+    },
+    {
+      "feature": "Transaction_Month",
+      "mean_abs_shap": 0.02364545501768589
+    },
+    {
+      "feature": "Device_Type_Tablet",
+      "mean_abs_shap": 0.022125139832496643
+    },
+    {
+      "feature": "Transaction_DayOfWeek",
+      "mean_abs_shap": 0.014782777056097984
+    },
+    {
+      "feature": "Transaction_Hour",
+      "mean_abs_shap": 0.014348660595715046
+    },
+    {
+      "feature": "Transaction_Type_POS",
+      "mean_abs_shap": 0.013675522059202194
+    },
+    {
+      "feature": "Transaction_Type_Online",
+      "mean_abs_shap": 0.010401194915175438
+    },
+    {
+      "feature": "Transaction_Hour_Cos",
+      "mean_abs_shap": 0.009904100559651852
+    },
+    {
+      "feature": "Transaction_Type_Bank Transfer",
+      "mean_abs_shap": 0.008575422689318657
+    }
+  ],
+  "robustness_results": [
+    {
+      "condition": "Original test data",
+      "status": "completed",
+      "recall": 0.6367880485527544,
+      "fpr": 0.040076617062030355,
+      "precision": 0.8826574633304572,
+      "f1": 0.7398300488157656,
+      "auc_roc": 0.8144796186077528,
+      "prediction_flip_rate": 0.0,
+      "mean_abs_probability_shift": 0.0,
+      "recall_gate_60pct": true,
+      "fpr_gate_5pct": true,
+      "error": "",
+      "delta_recall": 0.0,
+      "delta_fpr": 0.0,
+      "delta_precision": 0.0,
+      "delta_f1": 0.0
+    },
+    {
+      "condition": "5% numeric noise",
+      "status": "completed",
+      "recall": 0.633675692499222,
+      "fpr": 0.04449683217916605,
+      "precision": 0.8708297690333618,
+      "f1": 0.7335615204467664,
+      "auc_roc": 0.8109928351610114,
+      "prediction_flip_rate": 0.021,
+      "mean_abs_probability_shift": 0.005113699939101934,
+      "recall_gate_60pct": true,
+      "fpr_gate_5pct": true,
+      "error": "",
+      "delta_recall": -0.003112356053532439,
+      "delta_fpr": 0.004420215117135695,
+      "delta_precision": -0.011827694297095404,
+      "delta_f1": -0.006268528368999271
+    },
+    {
+      "condition": "10% unseen device category",
+      "status": "completed",
+      "recall": 0.6361655773420479,
+      "fpr": 0.03919257403860321,
+      "precision": 0.8848484848484849,
+      "f1": 0.7401774397972116,
+      "auc_roc": 0.8147206920683896,
+      "prediction_flip_rate": 0.001,
+      "mean_abs_probability_shift": 0.00032952017500065267,
+      "recall_gate_60pct": true,
+      "fpr_gate_5pct": true,
+      "error": "",
+      "delta_recall": -0.0006224712107064656,
+      "delta_fpr": -0.0008840430234271432,
+      "delta_precision": 0.002191021518027636,
+      "delta_f1": 0.000347390981445983
+    },
+    {
+      "condition": "Failed count forced to 3",
+      "status": "completed",
+      "recall": 0.06504824151882975,
+      "fpr": 0.057462796522764106,
+      "precision": 0.34891485809682804,
+      "f1": 0.10965372507869885,
+      "auc_roc": 0.5111967318564706,
+      "prediction_flip_rate": 0.2035,
+      "mean_abs_probability_shift": 0.17200365662574768,
+      "recall_gate_60pct": false,
+      "fpr_gate_5pct": false,
+      "error": "",
+      "delta_recall": -0.5717398070339247,
+      "delta_fpr": 0.01738617946073375,
+      "delta_precision": -0.5337426052336292,
+      "delta_f1": -0.6301763237370668
+    },
+    {
+      "condition": "Failed count forced to 4",
+      "status": "completed",
+      "recall": 1.0,
+      "fpr": 1.0,
+      "precision": 0.3213,
+      "f1": 0.4863392113827291,
+      "auc_roc": 0.5082379070843176,
+      "prediction_flip_rate": 0.7682,
+      "mean_abs_probability_shift": 0.6791147589683533,
+      "recall_gate_60pct": true,
+      "fpr_gate_5pct": false,
+      "error": "",
+      "delta_recall": 0.3632119514472456,
+      "delta_fpr": 0.9599233829379696,
+      "delta_precision": -0.5613574633304572,
+      "delta_f1": -0.2534908374330365
+    },
+    {
+      "condition": "5% missing Transaction_Amount",
+      "status": "completed",
+      "recall": 0.6361655773420479,
+      "fpr": 0.03933991454250774,
+      "precision": 0.884465599307659,
+      "f1": 0.7400434467776973,
+      "auc_roc": 0.8141212413783678,
+      "prediction_flip_rate": 0.0009,
+      "mean_abs_probability_shift": 0.0009269551956094801,
+      "recall_gate_60pct": true,
+      "fpr_gate_5pct": true,
+      "error": "",
+      "delta_recall": -0.0006224712107064656,
+      "delta_fpr": -0.0007367025195226182,
+      "delta_precision": 0.0018081359772017525,
+      "delta_f1": 0.0002133979619316495
+    },
+    {
+      "condition": "5% out-of-range numeric values",
+      "status": "completed",
+      "recall": 0.6470588235294118,
+      "fpr": 0.06600854574922646,
+      "precision": 0.8227146814404432,
+      "f1": 0.724390243902439,
+      "auc_roc": 0.8138929163335684,
+      "prediction_flip_rate": 0.0211,
+      "mean_abs_probability_shift": 0.0020689384546130896,
+      "recall_gate_60pct": true,
+      "fpr_gate_5pct": false,
+      "error": "",
+      "delta_recall": 0.010270774976657404,
+      "delta_fpr": 0.025931928687196105,
+      "delta_precision": -0.05994278189001401,
+      "delta_f1": -0.015439804913326638
+    }
+  ],
+  "contract_tests": [
+    {
+      "test": "valid_record",
+      "outcome": "accepted",
+      "message": ""
+    },
+    {
+      "test": "missing_amount",
+      "outcome": "safely rejected",
+      "message": "ValueError: Missing required fields: ['Transaction_Amount']"
+    },
+    {
+      "test": "invalid_timestamp",
+      "outcome": "safely rejected",
+      "message": "DateParseError: Unknown datetime string format, unable to parse: not-a-date, at position 0"
+    },
+    {
+      "test": "negative_amount",
+      "outcome": "safely rejected",
+      "message": "ValueError: Transaction_Amount must be non-negative"
+    }
+  ],
+  "limitations": [
+    "No demographic protected attributes are available.",
+    "The dataset is synthetic and cannot establish real-world fairness.",
+    "SHAP explains model behavior, not causation.",
+    "Robustness criteria are team-defined prototype criteria."
+  ]
+}

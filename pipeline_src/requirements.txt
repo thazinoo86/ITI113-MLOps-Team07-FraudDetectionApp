@@ -1,0 +1,2 @@
+xgboost>=2,<4
+joblib>=1.3

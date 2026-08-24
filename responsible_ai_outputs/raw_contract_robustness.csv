@@ -1,0 +1,5 @@
+test,outcome,message
+valid_record,accepted,
+missing_amount,safely rejected,ValueError: Missing required fields: ['Transaction_Amount']
+invalid_timestamp,safely rejected,"DateParseError: Unknown datetime string format, unable to parse: not-a-date, at position 0"
+negative_amount,safely rejected,ValueError: Transaction_Amount must be non-negative
