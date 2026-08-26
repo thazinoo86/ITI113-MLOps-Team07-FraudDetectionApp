@@ -2,7 +2,7 @@
   "team_id": "team07",
   "student_id": "s701",
   "project_name": "credit-card-fraud-detection",
-  "model_uri": "runs:/b5b7943b5feb4629a5f1810ff572b623/model",
+  "model_uri": "runs:/21825ef39b7c41bdadc838f378ae6c2f/model",
   "algorithm": "XGBoost",
   "frozen_threshold": 0.19469599425792694,
   "test_rows": 10000,

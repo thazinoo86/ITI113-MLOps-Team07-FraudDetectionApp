@@ -9,9 +9,9 @@
   "dataset_source_url": "https://www.kaggle.com/datasets/samayashar/fraud-detection-transactions-dataset",
   "model_family": "Model_B",
   "algorithm": "XGBoost",
-  "best_run_id": "b5b7943b5feb4629a5f1810ff572b623",
+  "best_run_id": "21825ef39b7c41bdadc838f378ae6c2f",
   "best_run_name": "xgboost_candidate_05",
-  "best_model_uri": "runs:/b5b7943b5feb4629a5f1810ff572b623/model",
+  "best_model_uri": "runs:/21825ef39b7c41bdadc838f378ae6c2f/model",
   "best_parameters": {
     "n_estimators": 400,
     "max_depth": 5,
