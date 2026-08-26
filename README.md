@@ -9,5 +9,5 @@ Credit Card Fraud Detection Application
 
 ## Project Links
 - [GitHub repository](https://github.com/thazinoo86/ITI113-MLOps-Team07-FraudDetectionApp)
-- [Live demonstration](ADD-DEMO-URL)
+- [Live demonstration](https://e722405ddec0df92f9.gradio.live/)
 - [Final report powerpoint presentation](https://github.com/thazinoo86/ITI113-MLOps-Team07-FraudDetectionApp/blob/main/FinalReport_ISAGO_PresentationFile/ITI113%20-%20ML%20%26%20Ops%20Project%20-%20Final%20Report..docx)
